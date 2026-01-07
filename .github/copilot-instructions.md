@@ -75,4 +75,16 @@
   pre-commit run --all-files
   ```
 
-Também adicionei um notebook de exemplo em `notebooks/etl.ipynb` (compatível com Colab). Já incluí um workflow de GitHub Actions (`.github/workflows/pytest.yml`) que executa os testes (`pytest`) e um job de lint (`ruff check .`) em pushes e pull requests para `main` — o job de lint roda em Python **3.11** e **3.12**. Posso expandir os testes para cobrir mais casos de borda ou estender o CI para linting/formatting se desejar.
+Também adicionei um notebook de exemplo em `notebooks/etl.ipynb` (compatível com Colab). Já incluí um workflow de GitHub Actions (`.github/workflows/pytest.yml`) que executa os testes (`pytest`) e um job de lint (`ruff check .`) em pushes e pull requests para `main` — o job de lint roda em Python **3.11** e **3.12**.
+
+## Code owners & revisão automática
+- Para solicitar revisores automaticamente por caminho, adicione um arquivo `.github/CODEOWNERS` com mapeamentos de path -> `@username` ou `@org/team`.
+- Exemplo mínimo (já sugerido no repositório):
+```
+/src/ @edirley123
+/tests/ @edirley123
+/.github/ @edirley123
+```
+- **Atenção:** o GitHub não pode solicitar revisão do próprio autor do PR; substitua `@edirley123` por um revisor alternativo quando necessário.
+
+Posso criar/atualizar o `CODEOWNERS` para apontar para revisores diferentes se você me indicar os usernames.

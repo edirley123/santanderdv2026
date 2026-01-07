@@ -1,0 +1,15 @@
+# CODEOWNERS — define quais usuários/time recebem revisão automática por caminho
+# Atualize os usernames abaixo para os revisores desejados.
+
+# Revisores para código fonte
+/src/ @edirley123
+
+# Revisores para testes
+/tests/ @edirley123
+
+# Revisores para configurações e CI
+/.github/ @edirley123
+
+# Observação: GitHub não pode designar automaticamente o autor do PR como revisor;
+# se o autor abrir um PR que altera caminhos cobertos aqui, um revisor diferente
+# deve ser adicionado manualmente ou nos substitua por outro username.
