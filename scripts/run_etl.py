@@ -4,7 +4,7 @@
 Usage:
     python scripts/run_etl.py --input data/usuarios.csv --output data/clientes_com_recomendacao.csv
 """
-from src.etl import run_etl
+from santanderdv2026.etl import run_etl
 
 if __name__ == "__main__":
     import argparse

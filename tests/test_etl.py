@@ -1,5 +1,5 @@
 import pandas as pd
-from src.etl import run_etl
+from santanderdv2026.etl import run_etl
 
 
 def test_run_etl_creates_recommendation(tmp_path):

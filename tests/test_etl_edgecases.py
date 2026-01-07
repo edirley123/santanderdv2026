@@ -1,6 +1,6 @@
 import pandas as pd
 import pytest
-from src.etl import run_etl
+from santanderdv2026.etl import run_etl
 
 
 def test_missing_saldo_raises_keyerror(tmp_path):
