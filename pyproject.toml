@@ -7,3 +7,9 @@ name = "santanderdv2026"
 version = "0.0.0"
 description = "Exemplo ETL - Santander Dev Week"
 requires-python = ">=3.11"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
