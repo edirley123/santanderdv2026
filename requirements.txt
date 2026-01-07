@@ -1,2 +1,5 @@
 pandas>=1.5
 pytest>=7.0
+pre-commit>=3.4
+ruff>=0.0.279
+black>=24.3

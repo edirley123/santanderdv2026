@@ -1,6 +1,6 @@
 # santanderdv2026
 Projeto da DIO
-# Santander Dev Week 2023 - ETL com Python 📊
+b# Santander Dev Week 2023 - ETL com Python 📊
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Library-Pandas-orange.svg)](https://pandas.pydata.org/)
@@ -53,3 +53,13 @@ Os dados processados e as novas recomendações são exportados para um novo fic
    ```
 
 5. Notebook: abra `notebooks/etl.ipynb` no Jupyter/Colab; a primeira célula instala as dependências.
+
+6. (Opcional) Instalar e configurar `pre-commit` para hooks locais:
+```bash
+pip install pre-commit ruff black
+pre-commit install
+# rodar checks em todos os arquivos
+pre-commit run --all-files
+```
+
+Dica: os hooks configurados incluem `black` (formatação), `ruff` (lint) e verificação de espaços finais/fim de arquivo.
