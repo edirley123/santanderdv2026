@@ -62,4 +62,10 @@
   pytest -q
   ```
 
-Também adicionei um notebook de exemplo em `notebooks/etl.ipynb` (compatível com Colab). Já incluí um workflow de GitHub Actions (`.github/workflows/pytest.yml`) que executa os testes (`pytest`) em pushes e pull requests para `main`. Posso expandir os testes para cobrir mais casos de borda ou estender o CI para linting/formatting se desejar.
+- Verificar lint (localmente):
+  ```bash
+  pip install ruff
+  ruff check .
+  ```
+
+Também adicionei um notebook de exemplo em `notebooks/etl.ipynb` (compatível com Colab). Já incluí um workflow de GitHub Actions (`.github/workflows/pytest.yml`) que executa os testes (`pytest`) e um job de lint (`ruff check .`) em pushes e pull requests para `main`. Posso expandir os testes para cobrir mais casos de borda ou estender o CI para linting/formatting se desejar.
