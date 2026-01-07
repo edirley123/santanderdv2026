@@ -39,6 +39,8 @@ Os dados processados e as novas recomendações são exportados para um novo fic
    python -m venv .venv
    source .venv/bin/activate  # Linux / macOS
    pip install -r requirements.txt
+   # (opcional) instalar o pacote em modo editável para desenvolvimento/testes
+   pip install -e .
    ```
 
 3. Executar o ETL (exemplo):
